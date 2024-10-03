@@ -1,0 +1,17 @@
+---
+#Playbook to call multiple roles to configure systems
+- name: Configure systems
+  host: servers
+  become: yes
+
+
+  tasks:
+
+- name: Call Roles
+  host: serers
+  roles: 
+    # - hostname
+    # - firewalld
+    # - ntp-config
+
+     - motd
